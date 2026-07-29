@@ -1,84 +1,589 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Doctrine - Habit Gallery</title>
-    <style>
-        body {
-            /* 完美契合你 App 的美术馆米白纸面材质颜色 */
-            background-color: #F8F6F0; 
-            color: #2C2A29;
-            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            max-width: 700px;
-            padding: 60px 30px;
-        }
-        h1 {
-            font-size: 28px;
-            font-weight: normal;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 50px;
-            border-bottom: 1px solid #D4C9B0;
-            padding-bottom: 20px;
-        }
-        h2 {
-            font-size: 16px;
-            font-weight: bold;
-            margin-top: 40px;
-            letter-spacing: 1px;
-            color: #1A1A1A;
-        }
-        p, li {
-            font-size: 14px;
-            color: #4A4A4A;
-            text-align: justify;
-        }
-        .date {
-            text-align: center;
-            font-style: italic;
-            font-size: 13px;
-            color: #8C8A85;
-            margin-bottom: 40px;
-            margin-top: -30px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f6f2e9">
+  <meta name="description" content="Day Canvas Privacy Policy and Terms of Use">
+  <title>Day Canvas — Privacy Policy &amp; Terms</title>
+  <style>
+    :root {
+      --paper: #f6f2e9;
+      --card: #fffdf8;
+      --ink: #292824;
+      --muted: #716e66;
+      --line: #ddd5c5;
+      --gold: #a98b32;
+      --shadow: 0 18px 50px rgba(58, 51, 37, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.9), transparent 34rem),
+        var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+    }
+
+    a {
+      color: #7d671d;
+      text-underline-offset: 3px;
+    }
+
+    .masthead {
+      padding: 64px 24px 42px;
+      text-align: center;
+    }
+
+    .brand {
+      margin: 0;
+      font-size: clamp(1.65rem, 5vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      line-height: 1.25;
+    }
+
+    .subtitle {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.19em;
+      text-transform: uppercase;
+    }
+
+    .rule {
+      width: 74px;
+      height: 2px;
+      margin: 30px auto 0;
+      background: var(--gold);
+      opacity: 0.6;
+    }
+
+    .page {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto 64px;
+      padding: clamp(28px, 6vw, 64px);
+      background: var(--card);
+      border: 1px solid rgba(169, 139, 50, 0.15);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 0 auto 34px;
+      text-align: center;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 34px 0 50px;
+    }
+
+    nav a {
+      padding: 10px 16px;
+      color: var(--ink);
+      background: #faf7f0;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    section + section {
+      margin-top: 58px;
+      padding-top: 50px;
+      border-top: 1px solid var(--line);
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.3;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 7vw, 3.4rem);
+      font-weight: 600;
+    }
+
+    h2 {
+      margin: 0 0 34px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.7rem, 5vw, 2.35rem);
+      font-weight: 600;
+    }
+
+    h3 {
+      margin: 34px 0 10px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      margin: 10px 0 20px;
+      padding-left: 1.3rem;
+    }
+
+    li + li {
+      margin-top: 7px;
+    }
+
+    .contact {
+      margin-top: 28px;
+      padding: 20px;
+      background: #faf7f0;
+      border-left: 3px solid var(--gold);
+      border-radius: 4px 14px 14px 4px;
+    }
+
+    footer {
+      padding: 0 24px 48px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 560px) {
+      .masthead {
+        padding-top: 44px;
+      }
+
+      .page {
+        width: min(100% - 20px, 900px);
+        border-radius: 20px;
+      }
+
+      .brand {
+        letter-spacing: 0.2em;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header class="masthead">
+    <p class="brand">DAY CANVAS</p>
+    <p class="subtitle">Turn days into a collection</p>
+    <div class="rule" aria-hidden="true"></div>
+  </header>
 
-<div class="container">
-    <h1>The Privacy Doctrine</h1>
-    <div class="date">Last Updated: May 2026</div>
+  <main class="page">
+    <div class="intro">
+      <h1>Privacy Policy &amp; Terms</h1>
+      <p class="updated">Last updated: July 29, 2026</p>
+      <p>
+        Day Canvas is a habit-tracking and artwork collection application operated
+        by the independent developer of Day Canvas (“Day Canvas,” “we,” “us,” or
+        “our”). This document explains how Day Canvas handles information and sets
+        out the terms that apply when you use the application.
+      </p>
+      <p>
+        Questions may be sent to
+        <a href="mailto:habitgalleryapp@gmail.com">habitgalleryapp@gmail.com</a>.
+      </p>
+    </div>
 
-    <p>At Habit Gallery, we believe that consistency is the ultimate aesthetic, and true discipline requires absolute silence. This Privacy Doctrine outlines our unwavering commitment to the privacy, security, and cryptographic isolation of your digital atelier.</p>
+    <nav aria-label="Legal document sections">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Use</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <h2>1. The Archival Principle: Absolute Local Storage</h2>
-    <p>Habit Gallery operates entirely as an offline, private sanctuary. We do not collect, harvest, transmit, or store your personal data, habit progress, or usage analytics on any external servers. Your daily check-ins, masterpiece completions, and gallery interactions are written exclusively to your device's local storage. You are the sole curator of your history.</p>
+    <section id="privacy">
+      <h2>Part I — Privacy Policy</h2>
 
-    <h2>2. Patronage and the Digital Vault (In-App Purchases)</h2>
-    <p>When you choose to support the gallery through Patronage (In-App Purchases) to acquire tokens or aesthetic artifacts, the financial transaction is securely processed and authenticated by the Google Play Billing system. Habit Gallery never has access to your credit card or financial details. To ensure industrial-grade security against unauthorized tampering, your acquired digital assets (Tokens) are sealed within your device's highest-tier security enclave.</p>
+      <h3>1. Scope</h3>
+      <p>
+        This Privacy Policy applies to the Day Canvas mobile application and the
+        legal information page linked from the application and its Google Play
+        listing.
+      </p>
+      <p>
+        Day Canvas does not require an account and does not operate a
+        developer-controlled backend for storing your habit or gallery data.
+      </p>
 
-    <h2>3. Equipment Bound Policy & Non-Migratability of Assets</h2>
-    <p>Due to the strict cryptographic isolation of the device's hardware enclave, all unconsumed Digital Assets (Tokens) are legally and technically tethered exclusively to the specific physical device on which they were purchased.</p>
-    <ul>
-        <li><strong>The Boundary of Vault Synchronization:</strong> The "Vault Synchronization" (local archive export) feature is strictly designed to migrate historical habit logs, check-in timelines, and naturally unlocked exhibition manifests.</li>
-        <li><strong>The Permanent Forfeiture Clause:</strong> Digital Assets (Tokens) are strictly excluded from the archive file and cannot be transferred, backed up, or migrated. Uninstalling the application, clearing application sandbox data, or migrating to a new physical device will result in the permanent forfeiture of all unconsumed Digital Assets remaining on that specific device. The Gallery bears no liability for recovering or converting such assets under any circumstances.</li>
-    </ul>
+      <h3>2. Information handled by the app</h3>
+      <p>
+        Day Canvas may handle the following information on your device so that
+        its features can work:
+      </p>
+      <ul>
+        <li>habit names and tracking preferences that you enter;</li>
+        <li>Journey schedules, check-ins, rest days, timer progress, and completion history;</li>
+        <li>artwork progress, fragments, cracks, repairs, frames, signatures, and collection records;</li>
+        <li>locally earned token balances, inventory, and reward claim states;</li>
+        <li>notification times and notification enablement preferences; and</li>
+        <li>local settings needed to remember whether introductory or review-related prompts have already been attempted.</li>
+      </ul>
+      <p>
+        This information is used only to provide the app’s habit tracking,
+        artwork collection, reminder, reward, backup, and restoration features.
+      </p>
 
-    <h2>4. Third-Party Services</h2>
-    <p>While Habit Gallery acts as a sealed environment, we rely on Google Play Billing SDK for patronage processing, which may collect basic diagnostic or purchase validation data as governed by Google's overarching privacy policies.</p>
+      <h3>3. Local storage</h3>
+      <p>
+        Day Canvas stores its primary app data locally in the application storage
+        assigned to it by the operating system. Token balances use
+        platform-provided secure storage where available.
+      </p>
+      <p>
+        Day Canvas does not operate a server that receives your habit names,
+        check-in history, artwork signatures, gallery activity, or token balance.
+        We do not sell this information and do not use it for advertising.
+      </p>
+      <p>
+        The device operating system or app store may provide device-level backup
+        or restore features according to your device settings and the platform
+        provider’s policies. Those platform services are controlled by the
+        relevant platform provider, not by Day Canvas.
+      </p>
 
-    <h2>5. Curator Inquiries</h2>
-    <p>For legal inquiries or correspondence regarding this Doctrine, you may contact the Gallery Curator at: <strong>[habitgalleryapp@gmail.com]</strong></p>
-</div>
+      <h3>4. Vault export and import</h3>
+      <p>Vault Synchronization is a user-initiated local export and import feature.</p>
+      <p>An exported Vault file may contain:</p>
+      <ul>
+        <li>Journey and habit records;</li>
+        <li>check-in and artwork progress;</li>
+        <li>collection and frame information;</li>
+        <li>local inventory information; and</li>
+        <li>Theme reward claim states.</li>
+      </ul>
+      <p>Token balances are not included in Vault exports.</p>
+      <p>
+        When you export a Vault file, Day Canvas creates a JSON file and opens
+        the operating system’s share interface. You choose where the file is
+        saved or which external application receives it. Day Canvas does not
+        automatically upload the file to us. After you share or store a Vault
+        file outside Day Canvas, the selected destination’s privacy and security
+        practices apply.
+      </p>
+      <p>
+        You are responsible for protecting exported Vault files because they may
+        contain habit names and activity history that you consider private.
+      </p>
 
+      <h3>5. Tokens and digital rewards</h3>
+      <p>Tokens in Day Canvas are earned through local app activity. In the current version:</p>
+      <ul>
+        <li>tokens cannot be purchased with real money;</li>
+        <li>tokens cannot be sold, transferred, withdrawn, or exchanged for cash, goods, or external benefits;</li>
+        <li>tokens have no monetary value; and</li>
+        <li>token balances are excluded from Vault exports.</li>
+      </ul>
+      <p>
+        Clearing app storage, uninstalling the app, changing devices, or losing
+        access to the device may result in the loss of locally stored tokens.
+      </p>
+
+      <h3>6. Notifications</h3>
+      <p>
+        If you enable The Daily Call, Day Canvas requests notification permission
+        and schedules reminders locally on your device. Reminder times and
+        enablement preferences are stored locally.
+      </p>
+      <p>
+        Day Canvas may access the device’s configured time zone so that reminders
+        can be scheduled at the intended local time. The app does not request
+        precise or approximate location permission for this purpose.
+      </p>
+      <p>
+        You can disable reminders in Day Canvas or change notification permission
+        in Android system settings.
+      </p>
+
+      <h3>7. Saving artwork and accessing files</h3>
+      <p>
+        Day Canvas allows you to save generated Collection Cards or original
+        artwork views to your device. The app does not require broad access to
+        read your photo library for this feature.
+      </p>
+      <p>
+        When you import a Vault file, the operating system file picker lets you
+        select the file. Day Canvas reads the selected file only to perform the
+        restoration you requested.
+      </p>
+
+      <h3>8. Network connections and third-party platform services</h3>
+      <p>
+        Day Canvas does not include advertising, Firebase Analytics, Firebase
+        Crashlytics, or Google Play Billing in the current version.
+      </p>
+      <p>The app may interact with the following platform or third-party services:</p>
+      <ul>
+        <li>
+          <strong>Google Play distribution and In-App Review:</strong> Google Play
+          may process device, account, diagnostic, or interaction information
+          under Google’s own terms and privacy policies. Day Canvas does not
+          receive the content of a review through the in-app review prompt.
+        </li>
+        <li>
+          <strong>Google Fonts:</strong> Some app versions or device states may
+          request font resources provided by Google. Google may receive technical
+          connection information, such as an IP address, when responding to such
+          a request. Day Canvas does not receive this information.
+        </li>
+        <li>
+          <strong>External browser:</strong> When you choose Terms &amp; Privacy,
+          Day Canvas asks your browser to open the public legal page. Your browser
+          and network provider handle that connection.
+        </li>
+        <li>
+          <strong>Operating system share and file interfaces:</strong> When you
+          export, import, or save content, the operating system and any destination
+          you select process the action according to their own policies.
+        </li>
+      </ul>
+      <p>
+        Day Canvas does not control the independent data practices of Google, your
+        operating system provider, browser, cloud storage provider, or another
+        application you choose through a system interface.
+      </p>
+
+      <h3>9. Analytics, advertising, and purchases</h3>
+      <p>The current version of Day Canvas:</p>
+      <ul>
+        <li>does not use analytics SDKs to track your behavior;</li>
+        <li>does not use crash-reporting SDKs that transmit crash data to us;</li>
+        <li>does not display third-party advertisements;</li>
+        <li>does not access an advertising identifier; and</li>
+        <li>does not offer in-app purchases or subscriptions.</li>
+      </ul>
+      <p>
+        If a future version changes these practices, this Privacy Policy and the
+        Google Play Data Safety declaration will be updated before that version
+        is released.
+      </p>
+
+      <h3>10. Data retention and deletion</h3>
+      <p>
+        Local app data remains on your device until it is changed through normal
+        app use, cleared through Android system settings, or removed when the app
+        is uninstalled, subject to any device-level backup or restore service
+        controlled by the platform provider.
+      </p>
+      <p>
+        Vault files that you export are controlled by you and must be deleted
+        from their saved locations separately.
+      </p>
+      <p>
+        Because Day Canvas does not provide user accounts or store your app data
+        on a developer-controlled server, there is no server-side account or
+        cloud profile for us to delete.
+      </p>
+
+      <h3>11. Security</h3>
+      <p>
+        Day Canvas relies on application sandboxing, platform secure storage, and
+        operating system permissions to protect local data. No method of storage
+        is completely secure. You should protect access to your device and store
+        exported Vault files only in locations you trust.
+      </p>
+
+      <h3>12. Children’s privacy</h3>
+      <p>
+        Day Canvas is not directed to children under 13 and does not knowingly
+        collect personal information from children on a developer-controlled
+        server. If you believe a child has provided information directly to us,
+        contact us so that we can review the request.
+      </p>
+
+      <h3>13. Changes to this Privacy Policy</h3>
+      <p>
+        We may update this Privacy Policy when the app’s features, SDKs, legal
+        obligations, or data practices change. The updated version will be posted
+        at the same public URL with a revised “Last updated” date.
+      </p>
+
+      <h3>14. Contact</h3>
+      <p>
+        For privacy questions, contact
+        <a href="mailto:habitgalleryapp@gmail.com">habitgalleryapp@gmail.com</a>.
+      </p>
+    </section>
+
+    <section id="terms">
+      <h2>Part II — Terms of Use</h2>
+
+      <h3>1. Acceptance</h3>
+      <p>
+        By installing or using Day Canvas, you agree to these Terms of Use. If you
+        do not agree, do not use the application.
+      </p>
+
+      <h3>2. Personal use license</h3>
+      <p>
+        Day Canvas grants you a limited, non-exclusive, non-transferable,
+        revocable license to use the application for personal, lawful,
+        non-commercial purposes, subject to these Terms.
+      </p>
+      <p>
+        You may not reverse engineer, redistribute, sell, sublicense, misuse, or
+        attempt to interfere with the application except where applicable law
+        expressly permits such activity.
+      </p>
+
+      <h3>3. Habit tracking only</h3>
+      <p>
+        Day Canvas is a personal productivity and creative collection tool. It
+        does not provide medical, psychological, financial, legal, or other
+        professional advice. It does not guarantee that you will form a habit,
+        achieve a goal, improve your health, or obtain any particular result.
+      </p>
+
+      <h3>4. Local data and backups</h3>
+      <p>
+        You are responsible for your device, local app data, and any Vault files
+        you create. Day Canvas does not guarantee that local data or exported
+        files can always be recovered.
+      </p>
+      <p>
+        Token balances are not included in Vault exports. Before uninstalling the
+        app, clearing app storage, replacing a device, or performing a system
+        reset, review what information can and cannot be preserved.
+      </p>
+
+      <h3>5. Tokens and app rewards</h3>
+      <p>Day Canvas tokens and rewards:</p>
+      <ul>
+        <li>exist only within the application;</li>
+        <li>are provided for entertainment and app functionality;</li>
+        <li>have no cash value or property value;</li>
+        <li>cannot be sold, transferred, redeemed, or exchanged outside the app; and</li>
+        <li>may be adjusted if necessary to correct a technical error, protect app integrity, or update the reward system.</li>
+      </ul>
+      <p>
+        No token balance creates a financial account, stored-value account,
+        investment, ownership interest, or entitlement to payment.
+      </p>
+
+      <h3>6. Your input</h3>
+      <p>
+        You retain responsibility for habit names, signatures, and other text you
+        enter. Do not enter unlawful content or information that you do not have
+        the right to use.
+      </p>
+      <p>
+        Day Canvas does not claim ownership of your original text input. You grant
+        the app permission to process and display that input locally as necessary
+        to provide its features.
+      </p>
+
+      <h3>7. App content and intellectual property</h3>
+      <p>
+        The Day Canvas application, interface, branding, code, included artwork,
+        fonts, icons, and other supplied materials are owned by or licensed to
+        their respective rights holders and are protected by applicable
+        intellectual property laws.
+      </p>
+      <p>
+        Saving an artwork or Collection Card to your device does not transfer
+        ownership of the underlying supplied artwork or grant a right to sell,
+        redistribute, license, or commercially exploit it unless a separate
+        license expressly allows that use.
+      </p>
+
+      <h3>8. Availability and changes</h3>
+      <p>
+        We may modify, suspend, remove, or replace features when reasonably
+        necessary for maintenance, security, legal compliance, compatibility, or
+        product development.
+      </p>
+      <p>
+        We aim to keep Day Canvas functional, but we do not guarantee uninterrupted
+        availability, compatibility with every device, or permanent availability
+        of any feature.
+      </p>
+
+      <h3>9. Disclaimer</h3>
+      <p>
+        To the extent permitted by applicable law, Day Canvas is provided on an
+        “as is” and “as available” basis without warranties of any kind, whether
+        express or implied.
+      </p>
+      <p>
+        Nothing in these Terms excludes warranties or rights that cannot legally
+        be excluded under applicable consumer law.
+      </p>
+
+      <h3>10. Limitation of liability</h3>
+      <p>
+        To the extent permitted by applicable law, the developer of Day Canvas
+        will not be liable for indirect, incidental, special, consequential, or
+        punitive losses arising from use of the app, loss of local data, missed
+        reminders, or inability to access a feature.
+      </p>
+      <p>
+        This limitation does not apply where liability cannot legally be limited
+        or excluded.
+      </p>
+
+      <h3>11. Termination</h3>
+      <p>
+        You may stop using Day Canvas at any time by uninstalling it. We may
+        restrict access to future versions or services if necessary to address
+        unlawful use, security risks, or violations of these Terms.
+      </p>
+
+      <h3>12. Changes to these Terms</h3>
+      <p>
+        We may update these Terms as the application changes. Updated Terms will
+        be posted with a revised “Last updated” date. Continued use after an
+        update means you accept the revised Terms to the extent permitted by
+        applicable law.
+      </p>
+
+      <h3>13. Contact</h3>
+      <p>
+        Questions about these Terms may be sent to
+        <a href="mailto:habitgalleryapp@gmail.com">habitgalleryapp@gmail.com</a>.
+      </p>
+    </section>
+
+    <div class="contact" id="contact">
+      <strong>Contact</strong><br>
+      Privacy and Terms questions:
+      <a href="mailto:habitgalleryapp@gmail.com">habitgalleryapp@gmail.com</a>
+    </div>
+  </main>
+
+  <footer>Day Canvas · Privacy Policy &amp; Terms of Use</footer>
 </body>
 </html>
